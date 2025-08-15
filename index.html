@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizzaria Bella Massa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pizzaria Bella Massa</h1>
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="cardapio">
+      <h2 class="section-title">Nosso Cardápio</h2>
+      <div class="cardapio">
+        <div class="pizza">
+          <img src="https://source.unsplash.com/300x200/?pizza,calabresa" alt="Pizza Calabresa">
+          <h3>Pizza de Calabresa</h3>
+          <p>Molho de tomate, mussarela, calabresa e cebola</p>
+          <button onclick="fazerPedido('Pizza de Calabresa')">Pedir</button>
+        </div>
+        <div class="pizza">
+          <img src="https://source.unsplash.com/300x200/?pizza,margherita" alt="Pizza Margherita">
+          <h3>Pizza Margherita</h3>
+          <p>Molho de tomate, mussarela, tomate e manjericão</p>
+          <button onclick="fazerPedido('Pizza Margherita')">Pedir</button>
+        </div>
+        <div class="pizza">
+          <img src="https://source.unsplash.com/300x200/?pizza,quatro-queijos" alt="Pizza Quatro Queijos">
+          <h3>Pizza Quatro Queijos</h3>
+          <p>Mussarela, gorgonzola, provolone e parmesão</p>
+          <button onclick="fazerPedido('Pizza Quatro Queijos')">Pedir</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:40px;">
+      <h2 class="section-title">Contato</h2>
+      <p style="text-align:center;">
+        📞 (11) 99999-9999<br>
+        📍 Rua das Pizzas, 123 - São Paulo, SP<br>
+        ⏰ Atendimento: 18h às 23h
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Pizzaria Bella Massa. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function fazerPedido(pizza) {
+      alert('Você pediu: ' + pizza + ' 🍕 Obrigado!');
+    }
+  </script>
+
+</body>
+</html>
